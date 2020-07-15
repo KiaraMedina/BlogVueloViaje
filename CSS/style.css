@@ -1,0 +1,353 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: sans-serif;
+}
+.logo
+{
+    width: 200px;
+    height: 100px;
+}
+.destino img{
+    max-width: 85%;
+
+}
+
+/*Estilo de header*/
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+.logo,.menuu
+{
+    margin: 20px;
+    color: rgb(194, 10, 10);
+}
+.menuu
+{
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 45px;
+    border-radius: 5px;
+    
+}
+.nav{
+    position:absolute;
+    top: 140px;
+    left: -100%;
+    width: 100%;
+    z-index: 100;
+    transition: all 0.5s;
+   
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu--link
+{
+    cursor: pointer;
+    display: block;
+    padding: 15px ;
+    color:#fff;
+    height: 60px;
+    border-bottom: 1px solid rgb(194, 10, 10 ,0.5);
+    font-size: 20px;
+    font-weight: bold;
+}
+.menu--link:hover{
+    background: rgb(194, 10, 10);
+    color: white;
+}
+.muestrate
+{
+    left: 0;
+}
+
+/*estilos del baner*/
+.banner img
+{
+width: 100%;
+}
+.banner{
+    position:relative;
+    text-align: center; 
+    
+}
+
+
+#c-slider
+{
+    margin: auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#slider{
+    display: flex;
+    width: 400%;
+    
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: ease-in;
+    
+}
+
+
+
+#slider section{
+    width: 100%;
+}
+
+#slider img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+#boton-prov,#boton-next
+{
+    width: 40px;
+    height: 40px;
+    background: rgba(194, 10, 10, 0.5);
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%) ;
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    font-family: monospace;
+    cursor: pointer;
+    color: white;
+    
+}
+#boton-prov:hover,#boton-next:hover{
+    background:rgb(194, 10, 10 ,0.9) ;
+}
+#boton-prov
+{
+    left: 10px;
+}
+#boton-next{
+    right: 10px;
+}
+.banner-description
+{
+   background: rgba(0, 0, 0, 0.5); 
+   color: #fff;
+   padding:20px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translateX(-50%) translateY(-50%);
+}
+.banner-description h1{
+    font-size: 30px;
+
+}
+.banner-description p{
+    font-size: 10px;
+   
+    
+}
+.slider-txt2{
+    background: rgb(194, 10, 10 ,0.7);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    color: #fff;
+    text-align: justify;
+    
+}
+/*Estilos de destino */
+.destino-titulo
+{
+    font-size: 40px;
+    text-align: center;
+}
+.destino-txt
+{
+    text-align: justify;
+    font-size: 20px;
+    padding: 15px;
+}
+.destino img{
+    width: 100%;
+  
+    border-radius: 50%;
+    margin: 30px;
+
+}
+.destino-columna
+{
+    position: relative;
+
+}
+.destino-columna h3
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    text-shadow:white 0 0 8px , yellow 10px 10px 10px;
+    font-size: 20px;
+    font-weight: 900;
+   
+    
+}
+.destino .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.destino-columna:hover .destino-img{
+    box-shadow: 0 0 0 8px white , 0 15px 150px;
+    transform: scale(1.1);
+}
+
+/*programas especiales
+*/
+.especial{
+    background:rgb(220, 20, 60) ;
+    text-align: center; color: #fff;
+}
+.programas__titulo{
+    font-size: 30px;
+      padding: 25px;
+}
+.especial__img {
+   width: 100%;  
+}
+.informacion{
+    margin-top: -6px;
+    background: #fff;
+    color: #000;
+}
+.especial__titulo{
+    font-size: 25px;
+    padding: 5px;
+}
+.especial__txt{
+   padding: 25px;
+    text-align: justify;
+}
+.button{
+    padding: 15px;
+    margin: 15px;
+    font-size: 20px;
+  background: rgb(236, 38, 38);
+    border: 0;
+     cursor: pointer;
+     color: white;
+    font-weight: bold;
+}
+.button:hover {
+          box-shadow: 0 0px 15px 3px rgba(194, 10, 10, 0.5);  
+}
+.especial__columna1,.especial__columna2,.especial__columna3{
+ margin: 15px; 
+}
+.especial .contenedor{
+     display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+}
+/*OFERTAS Y DESCUNETOS*/
+.ofertas-titulo{
+padding: 25px;
+text-align: center;
+font-size: 30px;
+}
+.oferta-img
+{
+    width: 100%; 
+    filter: brightness(60%)
+}
+.ofertas-columna{
+    position: relative;
+}
+.ofertas-columna h4{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
+color: white;
+font-size: 30px;
+}
+.ofertas-columna:hover .oferta-img{
+filter: brightness(100%)}
+.ofertas .contenedor
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*Estilos del Fondo*/
+.fondo{
+    width: 100%;
+}
+.info-fondo{
+    position: relative;
+}
+.fondo .contenedor 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+video{
+    width: 100%;
+    
+}
+
+/*Estilos del footer*/
+footer .contenedor
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.copy
+{
+    font-size: 20px;
+}
+.sociales
+{
+    width:100%;
+    text-align: center;
+}
+.pointer
+{
+    cursor: pointer;
+}
+
+::-webkit-scrollbar{
+  width: 25px;  
+
+}
+::-webkit-scrollbar-track{
+    border: 7px solid #232943;
+    box-shadow: inset 0 0 2.5px 2px rgba(0, 0,0, 0.5);
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(
+        45deg,
+        rgb(240, 10, 10),
+    white,
+    black
+    );
+    border-radius: 3px;
+}
+
